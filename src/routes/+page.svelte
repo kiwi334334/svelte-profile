@@ -40,7 +40,7 @@
 	>
     <br>
 	<button
-		onclick={() => {
+		on:click={() => {
 			count += 1;
 			if (count > 9) {
 				count = 0;
