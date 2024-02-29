@@ -1,5 +1,6 @@
 <script lang="ts">
 	let count = $state(0);
+	let customMessage = $state('');
 	let leftLimit = $state(0);
 	let righLimit = $state(1);
 	let arrayWithAllMessages = $state([
@@ -41,6 +42,9 @@
 		}}>Decrease Right Character Limit</button
 	>
     <br>
+		<input bind:value={customMessage} placeholder="Add Custom Messages Here">
+		<button on:click={() => {arrayWithAllMessages.push(customMessage); customMessage = ''}}>Submit Your Custom Message</button>
+	<br>
 	<button
 		on:click={() => {
 			count += 1;
