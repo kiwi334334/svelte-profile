@@ -12,7 +12,9 @@
 		'Hello There',
 		'Subway Eat Fresh',
 		'NOOOOOOOOOOOOOOOOOOOOOOOOOOOO!',
-		'In Response: Counter Spell'
+		'In Response: Counter Spell',
+        'Your Father Smelt Of Elder Berrys',
+        'Advance Speed To Ludicrous Speed!'
 	]);
 </script>
 
@@ -42,7 +44,7 @@
 	<button
 		on:click={() => {
 			count += 1;
-			if (count > 9) {
+			if (count > arrayWithAllMessages.length) {
 				count = 0;
 			}
 		}}>Cycle Messages</button
@@ -56,6 +58,8 @@
 <style>
 	:root {
 		background: skyblue;
+        padding:0;
+        margin: 0;
 	}
 	span {
 		color: blueviolet;
